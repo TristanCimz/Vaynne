@@ -1,0 +1,114 @@
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+   .header-nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.header-nav select {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  background-color: #A9A9A9;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-nav select option {
+  color: #333;
+}
+
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+    .login {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    .login input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .contact i {
+      margin-right: 10px;
+    }
+
+    .family-tree img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.siblings-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.siblings-images img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .achievements img {
+      margin-top: 10px;
+      max-width: 100%;
+      border: 2px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 10px;
+      }
+    }
+  </style>

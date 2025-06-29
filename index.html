@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tristan Cimafranca Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+.header-nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.header-nav select {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  background-color: #A9A9A9;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-nav select option {
+  color: #333;
+}
+
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+    .login {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    .login input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .contact i {
+      margin-right: 10px;
+    }
+
+    .family-tree img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.siblings-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.siblings-images img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .achievements img {
+      margin-top: 10px;
+      max-width: 100%;
+      border: 2px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+  <!-- Navigation -->
+  <nav class="header-nav">
+    <select onchange="location = this.value;">
+      <option value="#">Select Section</option>
+      <option value="#login">Login for Validation</option>
+      <option value="#info">Student Information</option>
+      <option value="#family">Family Background</option>
+      <option value="#contact">Contact Information</option>
+      <option value="#education">Educational Background</option>
+      <option value="#achievements">Achievements / Certifications</option>
+    </select>
+  </nav>
+
+  <h1>Tristan P. Cimafranca</h1>
+  <p>IT Student at Asian College</p>
+  <img class="profileP" src="https://uploads.onecompiler.io/43mpnx8dq/43n8pfxc2/1234.png" alt="Tristan Cimafranca Profile Picture"/>
+</header>
+
+
+
+  <section class="login" id="login">
+    <h2>Login for Validation</h2>
+    <form onsubmit="return validateLogin();">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="submit" value="Login" />
+    </form>
+    <p id="login-message" style="margin-top: 10px; padding: 10px; border-radius: 5px; display: none;"></p>
+  </section>
+
+  <section class="info" id="info">
+    <h2>Student Information</h2>
+    <p><strong>Name:</strong> Tristan P. Cimafranca</p>
+    <p><strong>Course:</strong> Diploma Information Technology</p>
+    <p><strong>School:</strong> Asian College, Dumaguete City</p>
+  </section>
+
+ <section class="family-tree" id="family">
+  <h2>Family Background</h2>
+  <ul>
+    <li>
+       Father:  Jose Cimafranca          Jocelyn Cimafranca <br>
+       <div class="siblings-images">
+      <img src="https://uploads.onecompiler.io/43mpnx8dq/43p5v679s/12345.png" alt="Jose Cimafranca">
+      <img src="https://uploads.onecompiler.io/43mpnx8dq/43p5v679s/12.png" alt="Jocelyn Cimafranca">
+  </div>
+    <li>
+      Siblings: Ivan Jay Cimafranca         Kim Joshua Cimafranca <br>
+      <div class="siblings-images">
+        <img src="https://uploads.onecompiler.io/43mpnx8dq/43p5v679s/Screenshot%202025-06-29%20095528.png" alt="Ivan Jay Cimafranca">
+        <img src="https://uploads.onecompiler.io/43mpnx8dq/43p5v679s/Screenshot%202025-06-29%20100225.png" alt="Kim Joshua Cimafranca">
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+  <section class="contact" id="contact">
+    <h2>Contact Information</h2>
+    <p>📱 09391115220</p>
+    <p>📧 tristancimafranca12@gmail.com</p>
+  </section>
+
+  <section class="education" id="education">
+    <div class="edu-header">
+      <h2>Educational Background</h2>
+    </div>
+    <ul>
+      <li>Sibulan Central Elementary School (2010-2016)</li>
+      <li>Sibulan National High School (2016-2020)</li>
+      <li>AMA Computer College (2020-2022) – TVL Strand</li>
+      <li>Asian College (2023-2025) – 2nd Year in IT</li>
+    </ul>
+  </section>
+
+  <section class="achievements" id="achievements">
+    <h2>Achievements / Certifications</h2>
+
+    <div class="Certifications-embed text-center">
+      <img src="https://uploads.onecompiler.io/43mpnx8dq/43n8pfxc2/RESUME%20%20(2).png" alt="Certifications Preview" style="max-width: 100%; height: auto;">
+      <p>
+        <a href="https://uploads.onecompiler.io/43mpnx8dq/43n8pfxc2/RESUME%20%20(2).png" download class="btn btn-primary mt-3">
+          Download Certification Image
+        </a>
+      </p>
+    </div>
+
+    <div class="Certifications-embed text-center">
+      <img src="https://uploads.onecompiler.io/43mpnx8dq/43p5v679s/Screenshot%202025-06-29%20085108.png" alt="Certifications Preview" style="max-width: 100%; height: auto;">
+      <p>
+        <a href="https://uploads.onecompiler.io/43mpnx8dq/43p5v679s/Screenshot%202025-06-29%20085108.png" download class="btn btn-primary mt-3">
+          Download Certification Image
+        </a>
+      </p>
+    </div>
+
+  </section>
+
+
+</body>
+</html>
